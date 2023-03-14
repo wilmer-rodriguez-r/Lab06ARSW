@@ -15,21 +15,20 @@
 <body>
     <h1>Blueprints</h1>
     <label for="nombre">Author</label>
-    <input type="text" name="nombre" id="author-name">
-    <button id="button-author" onclick= "app.updateBlueprints($('#author-name').val())">Get Blueprints</button>
-    <table id = "blueprints">
-        <tr>
-            <th>
-                Blueprint's name
-            </th>
-            <th>
-                Number of points
-            </th>
-            <th>
-                
-            </th>
-        </tr>
+    <input type="text" name="nombre" id="authorName">
+    <button id="buttonAuthor" onclick= "app.updateBlueprints($('#authorName').val())">Get Blueprints</button>
+    <h3 id = "blueprints"></h3>
+    <table>
+        <thead>
+            <th>Blueprint's name</th>
+            <th>Number of points</th>
+            <th></th>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
-    <h3 id = "total-points">Total user points</h3>
+    <h3 id = "totalPoints">Total user points: </h3>
+    <h3 id = "currentBlueprint"></h3>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
 </body>
 </html>
